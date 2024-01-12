@@ -32,7 +32,8 @@ else:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["djangoflix-production.up.railway.app", "localhost", "http://127.0.0.1:8000/"]
+
+ALLOWED_HOSTS = ["djangoflix-production.up.railway.app", "localhost", "http://127.0.0.1:8000/", "127.0.0.1"]
 
 
 # Application definition
