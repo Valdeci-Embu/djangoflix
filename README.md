@@ -9,3 +9,6 @@ cadastrados por um super usuario, no caso o admin, através da página de admini
 O bootstrap pode ser acessado pelo link "https://getbootstrap.com/docs/5.0/getting-started/introduction/" e o tailwinds pelo link "https://tailwindcss.com/".
 
 No projeto tivemos noção de criação de formulários, adaptação do formulário do django, páginas de login, logout e pesquisa
+ Além da linguagem python, através do django, também é utilizado html e css. O css foi através do bootstrap mas tem configuraçao personalizada e tem também um scrit em javascript. 
+
+Projeto criado em dezembro de 2023 e publicado no Railway em janeiro de 2024
