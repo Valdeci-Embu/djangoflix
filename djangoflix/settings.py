@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
-import dj_database_url
 import os
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -33,7 +33,7 @@ else:
 DEBUG = False
 
 
-ALLOWED_HOSTS = ["djangoflix-production.up.railway.app", "localhost", "http://127.0.0.1:8000/", "127.0.0.1"]
+ALLOWED_HOSTS = ["djangoflix-production.up.railway.app", "localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -96,7 +96,6 @@ DATABASES = {
     }
 }
 
-
 DATABASE_URL = os.getenv("DATABASE_URL")
 if DATABASE_URL:
     DATABASES = {
@@ -141,7 +140,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
