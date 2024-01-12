@@ -8,49 +8,48 @@ Djangoflix - HomeFilmes
 {% block head %}
 <style>
     $itemGrow: 1.2;
-$duration: 250ms;
+    $duration: 250ms;
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  background-color: #000;
+    margin: 0;
+    background-color: #000;
 }
 
 h1 {
-  font-family: Arial;
-  color: red;
-  text-align: center;
+    font-family: Arial;
+    color: red;
+    text-align: center;
 }
 
 .wrapper {
-  grid-template-columns: repeat(3,100%);
-  <!--
-  display: grid;
-  overflow:hidden;
-  scroll-behavior: smooth;-->
+    grid-template-columns: repeat(3,100%);
+    <!--
+    display: grid;
+    overflow:hidden;
+    scroll-behavior: smooth;-->
 
-  section {
+section {
     width: 100%;
     position: relative;
     display: grid;
     grid-template-columns: repeat(5, auto);
     margin: 20px 0;
 
-    .item {
-      padding: 0 2px;
-      transition: $duration all;
+.item {
+    padding: 0 2px;
+    transition: $duration all;
 
-      &:hover {
+    &:hover {
         margin: 0 40px;
         transform: scale(1.2);
-      }
-
+        }
     }
 
-    a {
+a {
       position: absolute;
       color: #fff;
       text-decoration: none;
